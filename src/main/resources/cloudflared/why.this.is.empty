@@ -1,4 +1,4 @@
 The Cloudflare Tunnel executable is too large to include in the GitHub repository.
-Please run download.sh (for Unix/Linux/macOS) or download.bat (for Windows) to download the executable files.
+Please run download.sh to download the executable files.
 
 Cloudflare Tunnel Executable version: `2025.8.0`
