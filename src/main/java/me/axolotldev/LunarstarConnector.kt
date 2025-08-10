@@ -7,7 +7,6 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import me.axolotldev.cloudflared.CloudflareSoftware
 import net.fabricmc.api.ModInitializer
-import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import java.nio.file.Path
@@ -40,7 +39,7 @@ class LunarstarConnector : ModInitializer {
 
         GlobalScope.launch {
             withContext(Dispatchers.IO) {
-                CloudflareSoftware.startTunnel(TUNNEL_PATH, "testroute.axurl.cc", CONNECT_PORT)
+                CloudflareSoftware.startTunnel(TUNNEL_PATH, "lunarstar-cf.axurl.cc", CONNECT_PORT)
             }
         }
     }
