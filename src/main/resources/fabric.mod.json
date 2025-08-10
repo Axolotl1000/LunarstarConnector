@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "lunarstarconnector",
+	"version": "${version}",
+	"name": "LunarstarConnector",
+	"description": "Connect to Lunarstar Server through Cloudflare Tunnel — no direct IP exposure, stable & secure access.",
+	"authors": [
+		"AxolotlDev"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/lunarstarconnector/",
+		"sources": "https://github.com/Axolotl1000/LunarstarConnector"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/lunarstarconnector/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"me.axolotldev.LunarstarConnector"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "=1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"mixins": [
+		"mixins.lunarstarconnector.json"
+	]
+}
